@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Nine</title>
+</head>
+<body style="margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh;">
+
+    <!-- This is the image that will disappear and reappear -->
+    <img id="myImage" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Lionel_Messi_20180626.jpg" alt="I luv LFC" height="600" width="800">
+
+    <script>
+        // JavaScript to hide and show the image based on mouse events
+        const img = document.getElementById('myImage');
+
+        img.addEventListener('mouseenter', function() {
+            img.style.opacity = '0';  // Make the image invisible when mouse enters
+        });
+
+        img.addEventListener('mouseleave', function() {
+            img.style.opacity = '1';  // Make the image visible again when mouse leaves
+        });
+    </script>
+
+</body>
+</html
